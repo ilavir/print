@@ -291,6 +291,10 @@ body {
   padding-bottom: 8px;
 }
 
+.cabinet-content-cont table.formt td.newinputtd {
+  padding-top: 15px;
+}
+
 .cabinet-content-cont table.formt td.textareatd {
   padding-top: 15px;
   color: #136986;
@@ -347,6 +351,21 @@ body {
 }
 
 /* /отправить сообщение */
+/* изменить профиль */
+.cabinet-content-cont .profile-page table.formt input#name,
+.cabinet-content-cont .profile-page table.formt input#fam,
+.cabinet-content-cont .profile-page table.formt input#tel,
+.cabinet-content-cont .profile-page table.formt input#email {
+  width: 320px;
+}
+
+.cabinet-content-cont .profile-page table.formt input#oldpass,
+.cabinet-content-cont .profile-page table.formt input#newpass,
+.cabinet-content-cont .profile-page table.formt input#reppass {
+  width: 200px;
+}
+
+/* /изменить профиль */
 /* /формы */
 /* /личный кабинет */
 /* залогиненая форма */
