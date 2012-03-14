@@ -230,6 +230,7 @@ body {
 /* /меню в личном кабинете */
 .cabinet-cont .cabinet-content-cont {
   margin-left: 285px;
+  min-height: 330px;
 }
 
 .cabinet-content-cont .cabinet-title {
@@ -367,6 +368,79 @@ body {
 
 /* /изменить профиль */
 /* /формы */
+/* мои заказы */
+.cabinet-content-cont .zakazy-page {
+}
+
+.zakazy-page table.zakazyt {
+  width: 100%;
+}
+
+.zakazy-page table.zakazyt th {
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #edf3f5 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #edf3f5)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffffff 0%, #edf3f5 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ffffff 0%, #edf3f5 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ffffff 0%, #edf3f5 100%); /* IE10+ */
+  background: linear-gradient(top, #ffffff 0%, #edf3f5 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#edf3f5', GradientType = 0); /* IE6-9 */
+}
+
+.zakazy-page table.zakazyt th {
+  padding: 10px 2px;
+  color: #40545b;
+  font: bold 15px Arial;
+  text-align: center;
+}
+
+.zakazy-page table.zakazyt th:last-child {
+  -webkit-border-top-right-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  border-top-right-radius: 20px;
+}
+
+.zakazy-page table.zakazyt th a:link, .zakazy-page table.zakazyt th a:visited {
+  color: #40545b;
+  font: bold 15px Arial;
+  text-decoration: none;
+}
+
+.zakazy-page table.zakazyt tbody tr:hover {
+  background: #e9f8fd;
+}
+
+.zakazy-page table.zakazyt tr:last-child td:last-child {
+  -webkit-border-bottom-right-radius: 20px;
+  -moz-border-radius-bottomright: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.zakazy-page table.zakazyt td {
+  padding: 15px 8px;
+  border-top: solid 1px #cfdce0;
+  border-right: solid 1px #cfdce0;
+}
+
+.zakazy-page table.zakazyt td:last-child {
+  border-right: none;
+}
+
+.zakazy-page table.zakazyt td.nametd {
+  width: 100%;
+}
+
+.zakazy-page table.zakazyt td.nametd a:link, .zakazy-page table.zakazyt td.nametd a:visited {
+  color: #084c65;
+  text-decoration: underline;
+  font: normal 16px Arial;
+}
+
+.zakazy-page table.zakazyt td.nametd a:hover, .zakazy-page table.zakazyt td.nametd a:active {
+  color: #0079b2;
+}
+
+/* /мои заказы */
 /* /личный кабинет */
 /* залогиненая форма */
 .loggedin-cont {
