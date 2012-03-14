@@ -279,6 +279,75 @@ body {
   border-radius: 0 20px 20px 20px;
 }
 
+/* формы */
+.cabinet-content-cont table.formt {
+  width: 100%;
+}
+
+.cabinet-content-cont table.formt td.labeltd {
+  text-align: right;
+  color: #136986;
+  font: normal 14px Arial;
+  padding-bottom: 8px;
+}
+
+.cabinet-content-cont table.formt td.textareatd {
+  padding-top: 15px;
+  color: #136986;
+  font: normal 14px Arial;
+}
+
+.cabinet-content-cont table.formt td.submittd {
+  padding: 30px 0 20px;
+  text-align: center;
+}
+
+.cabinet-content-cont table.formt input {
+  border: solid 2px #b6d4de;
+  margin-left: 5px;
+}
+
+.cabinet-content-cont table.formt textarea {
+  border: solid 2px #b6d4de;
+  resize: none;
+}
+
+.cabinet-content-cont table.formt a.submit:link, .cabinet-content-cont table.formt a.submit:visited {
+  padding: 8px 15px;
+  color: #fff;
+  font: normal 18px Arial;
+  text-decoration: none;
+  border: solid 1px transparent;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #9aba39; /* Old browsers */
+  background: -moz-linear-gradient(top, #9aba39 0%, #b2d350 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9aba39), color-stop(100%, #b2d350)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #9aba39 0%, #b2d350 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #9aba39 0%, #b2d350 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #9aba39 0%, #b2d350 100%); /* IE10+ */
+  background: linear-gradient(top, #9aba39 0%, #b2d350 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#9aba39', endColorstr = '#b2d350', GradientType = 0); /* IE6-9 */
+}
+
+.cabinet-content-cont table.formt a.submit:hover, .cabinet-content-cont table.formt a.submit:active {
+  background: #b3d54b; /* Old browsers */
+}
+
+/* отправить сообщение */
+.cabinet-content-cont .message-page table.formt input#fio,
+.cabinet-content-cont .message-page table.formt input#tel,
+.cabinet-content-cont .message-page table.formt input#email {
+  width: 320px;
+}
+
+.cabinet-content-cont .message-page table.formt textarea#message-text {
+  width: 486px;
+}
+
+/* /отправить сообщение */
+/* /формы */
 /* /личный кабинет */
 /* залогиненая форма */
 .loggedin-cont {
@@ -348,6 +417,15 @@ body {
   color: #366979;
   font: normal 13px Arial;
   padding: 10px 0 40px 35px;
+}
+
+.copy a:link, .copy a:visited {
+  color: #366979;
+  text-decoration: underline;
+}
+
+.copy a:hover, .copy a:active {
+  text-decoration: none;
 }
 
 /* clearing-floats */

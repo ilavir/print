@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="description" content=""/>
+  <meta name="keywords" content=""/>
+  <title>Print / Мой профиль / Отправить сообщение</title>
+  <link href="css/reset.css" rel="stylesheet" type="text/css"/>
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="js/js.js"></script>
+</head>
+<body>
+<!-- шапка -->
+<div class="header">
+  <div class="container">
+    <table class="headert">
+      <tr>
+        <td class="logotd">
+          <a href="/"><img src="img/logo.png" width="153" height="32" alt=""/></a>
+        </td>
+        <td class="menutd">
+          <ul class="header-menu clearfix">
+            <li class="item1 active"><a href="#">Офсетная печать</a></li>
+            <li class="item2"><a href="#">Флексопечать</a></li>
+            <li class="item3"><a href="#">Контакты</a></li>
+          </ul>
+        </td>
+        <td class="addresstd">
+          <strong>Минск, ул. Первая, 21-305</strong><br/>
+          <a href="#">ofset@mail.ru</a>
+          <ul class="tels">
+            <li><img src="img/tels-mts.png" width="16" height="16" alt="МТС">&nbsp;033 200-00-00</li>
+            <li><img src="img/tels-velcom.png" width="16" height="16" alt="Velcom">&nbsp;044 200-00-00</li>
+            <li><img src="img/tels-gorod.png" width="16" height="16" alt="городоской">&nbsp;017 200-00-00</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!-- /шапка -->
+<div class="main-cont cabinet-cont">
+  <div class="cabinet-header">
+    <div class="loggedin-cont clearfix">
+      <div class="hello">Здравствуйте, <span class="bold">Николай</span>.</div>
+      <div class="logout"><a href="#">Выйти</a></div>
+    </div>
+  </div>
+  <!-- левое меню -->
+  <div class="cabinet-menu-cont">
+    <ul class="cabinet-menu">
+      <li><a href="#">Мои заказы</a></li>
+    </ul>
+    <div class="cabinet-menu-order-cont">
+      <div class="title">Заказать</div>
+      <ul class="cabinet-menu cabinet-menu-order">
+        <li><a href="#">Формы офсетной печати</a></li>
+        <li><a href="#">Формы флексопечати</a></li>
+      </ul>
+    </div>
+    <ul class="cabinet-menu">
+      <li><a href="#">Мой профиль</a></li>
+      <li class="active"><a href="#">Сообщения</a></li>
+      <li><a href="#">Справка</a></li>
+    </ul>
+  </div>
+  <!-- /левое меню -->
+  <div class="cabinet-content-cont">
+    <h1 class="cabinet-title">Отправить сообщение</h1>
+
+    <div class="cabinet-content clearfix">
+      <div class="green-hint">
+        Наш администратор
+        ответит на ваше
+        сообщение как можно
+        быстрее.
+      </div>
+      <div class="cabinet-content-inner-cont message-page">
+        <h2>Вы можете отправить сообщение администратору:</h2>
+        <table class="formt">
+          <tr>
+            <td class="labeltd">
+              <label for="fio">Ваше имя и фамилия:</label>
+            </td>
+            <td class="inputstd">
+              <input id="fio" type="text"/>
+            </td>
+          </tr>
+          <tr>
+            <td class="labeltd">
+              <label for="tel">Контактный телефон:</label>
+            </td>
+            <td class="inputstd">
+              <input id="tel" type="text"/>
+            </td>
+          </tr>
+          <tr>
+            <td class="labeltd">
+              <label for="email">E-mail:</label>
+            </td>
+            <td class="inputstd">
+              <input id="email" type="text"/>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="textareatd">
+              <label for="message-text">Ваше сообщение:</label><br/>
+              <textarea id="message-text" rows="7" placeholder="Введите ваше сообщение"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="submittd">
+              <a class="submit" href="#">Отправить сообщение</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- копирайт -->
+<div class="copy container">
+  &copy; 2012 <a href="#">Print</a>. All rights reserved.
+</div>
+<!-- /копирайт -->
+</body>
+</html>
