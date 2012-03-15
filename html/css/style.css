@@ -374,6 +374,7 @@ body {
 
 .zakazy-page table.zakazyt {
   width: 100%;
+  border-bottom: solid 1px #cfdce0;
 }
 
 .zakazy-page table.zakazyt th {
@@ -404,26 +405,38 @@ body {
   color: #40545b;
   font: bold 15px Arial;
   text-decoration: none;
+  padding: 2px 25px 2px 0;
+  margin: 0 5px;
+  background: url('../img/sort-icon.png') no-repeat;
+  background-position: 100% 1px;
+}
+
+.zakazy-page table.zakazyt th a:hover, .zakazy-page table.zakazyt th a:active {
+  background-position: 100% -29px;
+}
+
+.zakazy-page table.zakazyt th.active a:link, .zakazy-page table.zakazyt th.active a:visited {
+  background-position: 100% -29px !important;
 }
 
 .zakazy-page table.zakazyt tbody tr:hover {
   background: #e9f8fd;
 }
 
-.zakazy-page table.zakazyt tr:last-child td:last-child {
-  -webkit-border-bottom-right-radius: 20px;
-  -moz-border-radius-bottomright: 20px;
-  border-bottom-right-radius: 20px;
-}
-
 .zakazy-page table.zakazyt td {
   padding: 15px 8px;
   border-top: solid 1px #cfdce0;
   border-right: solid 1px #cfdce0;
+  vertical-align: middle;
 }
 
 .zakazy-page table.zakazyt td:last-child {
   border-right: none;
+}
+
+.zakazy-page table.zakazyt td.paytd,
+.zakazy-page table.zakazyt td.deletetd {
+  text-align: center;
 }
 
 .zakazy-page table.zakazyt td.nametd {
@@ -440,6 +453,112 @@ body {
   color: #0079b2;
 }
 
+.zakazy-page table.zakazyt td.statustd {
+  color: #fff;
+  font: bold 15px Arial;
+  padding: 0 2px !important;
+}
+
+.zakazy-page table.zakazyt td.statustd div {
+  padding: 5px 8px;
+  text-align: center;
+}
+
+.zakazy-page table.zakazyt td.statustd .accepted {
+  background: #3ea5c7;
+}
+
+.zakazy-page table.zakazyt td.statustd .processed {
+  background: #85a517;
+}
+
+.zakazy-page table.zakazyt td.statustd .closed {
+  background: #f5773f;
+}
+
+.zakazy-page table.zakazyt td.deletetd {
+  background: #dde6e9;
+}
+
+.zakazy-page table.zakazyt td.deletetd a:link, .zakazy-page table.zakazyt td.deletetd a:visited {
+  display: block;
+  width: 26px;
+  height: 26px;
+  text-indent: -9999px;
+  background: url('../img/delete-icon.png') no-repeat;
+  background-position: 0 0;
+}
+
+.zakazy-page table.zakazyt td.deletetd a:hover, .zakazy-page table.zakazyt td.deletetd a:active {
+  background-position: 0 -34px;
+}
+
+/* листалка */
+.zakazy-page .pager-cont {
+  text-align: center;
+  -webkit-border-radius: 0 0 20px 20px;
+  -moz-border-radius: 0 0 20px 20px;
+  border-radius: 0 0 20px 20px;
+  background: #ecf2f4; /* Old browsers */
+  background: -moz-linear-gradient(top, #ecf2f4 0%, #ffffff 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ecf2f4), color-stop(100%, #ffffff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ecf2f4 0%, #ffffff 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ecf2f4 0%, #ffffff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ecf2f4 0%, #ffffff 100%); /* IE10+ */
+  background: linear-gradient(top, #ecf2f4 0%, #ffffff 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ecf2f4', endColorstr = '#ffffff', GradientType = 0); /* IE6-9 */
+}
+
+.pager {
+  display: inline-block;
+  padding: 8px 15px;
+
+}
+
+.pager li {
+  float: left;
+  margin: 0 5px;
+  color: #82a311;
+  font: normal 18px Arial;
+}
+
+.pager li a:link, .pager li a:visited {
+  color: #0086b5;
+}
+
+.pager li a:hover, .pager li a:active {
+  color: #82a311;
+}
+
+.pager li.pager-next a:link, .pager li.pager-next a:visited {
+  display: block;
+  margin-top: 3px;
+  width: 15px;
+  height: 17px;
+  text-indent: -9999px;
+  background: url('../img/pager-arrow-right.png') no-repeat;
+  background-position: 0 0;
+}
+
+.pager li.pager-next a:hover, .pager li.pager-next a:active {
+  background-position: 0 -23px;
+}
+
+.pager li.pager-prev a:link, .pager li.pager-prev a:visited {
+  display: block;
+  margin-top: 3px;
+  width: 15px;
+  height: 17px;
+  text-indent: -9999px;
+  background: url('../img/pager-arrow-left.png') no-repeat;
+  background-position: 0 0;
+}
+
+.pager li.pager-prev a:hover, .pager li.pager-prev a:active {
+  background-position: 0 -23px;
+}
+
+/* /листалка */
 /* /мои заказы */
 /* /личный кабинет */
 /* залогиненая форма */

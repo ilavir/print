@@ -75,22 +75,21 @@
           <thead>
           <tr>
             <th>
-              <a class="numberl" href="#">Номер</a>
+              <a href="#">Номер</a>
             </th>
             <th>
-              <a class="namel" href="#">Название</a>
+              <a href="#">Название</a>
             </th>
             <th>
-              <a class="datel" href="#">Дата</a>
+              <a href="#">Дата</a>
             </th>
-            <th>
-              <a class="statusl" href="#">Статус</a>
+            <th class="active">
+              <a href="#">Статус</a>
             </th>
             <th>
               Оплата
             </th>
             <th>
-              &nbsp;
             </th>
           </tr>
           </thead>
@@ -109,6 +108,47 @@
               <div class="accepted">Принят</div>
             </td>
             <td class="paytd">
+              <img src="img/pay-no-icon.png" width="25" height="25" alt=""/>
+            </td>
+            <td class="deletetd">
+              <a href="#">Удалить</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="numbertd">
+              1250034
+            </td>
+            <td class="nametd">
+              <a href="#">Имиджевый буклет «Белсвисбанк»</a>
+            </td>
+            <td class="datetd">
+              09.11.2012
+            </td>
+            <td class="statustd">
+              <div class="processed">В работе</div>
+            </td>
+            <td class="paytd">
+              <img src="img/pay-yes-icon.png" width="25" height="25" alt=""/>
+            </td>
+            <td class="deletetd">
+              <a href="#">Удалить</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="numbertd">
+              1250034
+            </td>
+            <td class="nametd">
+              <a href="#">Имиджевый буклет «Белсвисбанк», или что-нибудь другое, чтобы в одну строку не влазило</a>
+            </td>
+            <td class="datetd">
+              09.11.2012
+            </td>
+            <td class="statustd">
+              <div class="closed">Завершен</div>
+            </td>
+            <td class="paytd">
+              <img src="img/pay-no-icon.png" width="25" height="25" alt=""/>
             </td>
             <td class="deletetd">
               <a href="#">Удалить</a>
@@ -128,25 +168,7 @@
               <div class="accepted">Принят</div>
             </td>
             <td class="paytd">
-            </td>
-            <td class="deletetd">
-              <a href="#">Удалить</a>
-            </td>
-          </tr>
-          <tr>
-            <td class="numbertd">
-              1250034
-            </td>
-            <td class="nametd">
-              <a href="#">Имиджевый буклет «Белсвисбанк»</a>
-            </td>
-            <td class="datetd">
-              09.11.2012
-            </td>
-            <td class="statustd">
-              <div class="accepted">Принят</div>
-            </td>
-            <td class="paytd">
+              <img src="img/pay-yes-icon.png" width="25" height="25" alt=""/>
             </td>
             <td class="deletetd">
               <a href="#">Удалить</a>
@@ -154,6 +176,19 @@
           </tr>
           </tbody>
         </table>
+        <div class="pager-cont">
+          <ul class="pager clearfix">
+            <li class="pager-prev"><a href="#">Назад</a></li>
+            <li class="pager-active">1</li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li>...</li>
+            <li><a href="#">23</a></li>
+            <li class="pager-next"><a href="#">Вперед</a></li>
+          </ul>
+          <div style="clear: left;"></div>
+        </div>
       </div>
     </div>
   </div>
