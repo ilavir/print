@@ -99,15 +99,18 @@ body {
   text-decoration: underline;
 }
 
-.header .tels {
+.header .tels,
+.contacts-ext-page .tels {
   margin-top: 10px;
 }
 
-.header .tels li {
+.header .tels li,
+.contacts-ext-page .tels li {
   margin-bottom: 4px;
 }
 
-.header .tels img {
+.header .tels img,
+.contacts-ext-page .tels img {
   position: relative;
   top: 2px;
 }
@@ -240,7 +243,8 @@ body {
 
 /* /главная страница */
 /* офсетная печать */
-.ofset-ext-page .content-cont {
+.ofset-ext-page .content-cont,
+.contacts-ext-page .content-cont {
   height: 100%;
   border: solid 2px #b6d4de;
   -webkit-border-radius: 20px;
@@ -249,11 +253,14 @@ body {
   background: #fff;
 }
 
-.ofset-ext-page .content-cont .content-text {
+.ofset-ext-page .content-cont .content-text,
+.contacts-ext-page .content-cont .content-text {
   margin: 20px 30px;
 }
 
-.ofset-ext-page .content-cont .title {
+.ofset-ext-page .content-cont .title,
+.contacts-ext-page .content-cont .title {
+  margin-bottom: 10px;
   padding-bottom: 15px;
   color: #3c5962;
   font: normal 38px Arial;
@@ -266,7 +273,8 @@ body {
   font: normal 14px Arial;
 }
 
-.ofset-ext-page .content-cont hr {
+.ofset-ext-page .content-cont hr,
+.contacts-ext-page .content-cont hr {
   height: 2px;
   background: #c3d6dc;
   border: none;
@@ -286,7 +294,8 @@ body {
   padding: 0 30px;
 }
 
-.ofset-ext-page .ofirme-cont {
+.ofset-ext-page .ofirme-cont,
+.contacts-ext-page .ofirme-cont {
   min-height: 340px;
   margin-top: 20px;
   background: url('../img/right-banner1.jpg') no-repeat;
@@ -296,7 +305,8 @@ body {
   border-radius: 20px;
 }
 
-.ofset-ext-page .ofirme-cont .ofirme {
+.ofset-ext-page .ofirme-cont .ofirme,
+.contacts-ext-page .ofirme-cont .ofirme {
   background: url('../img/ofirme-bg.png');
   -webkit-border-radius: 18px 18px 0 0;
   -moz-border-radius: 18px 18px 0 0;
@@ -304,6 +314,64 @@ body {
 }
 
 /* /офсетная печать */
+/* контакты */
+.contacts-ext-page .content-cont .address-map {
+  float: left;
+}
+
+.contacts-ext-page .content-cont .address-map img {
+  border: solid 2px #daedff;
+}
+
+.contacts-ext-page .content-cont .address-map a:link, .contacts-ext-page .content-cont .address-map a:visited {
+  display: inline-block;
+  margin: 5px 0 20px;
+  color: #d34c4a;
+  text-decoration: underline;
+}
+
+.contacts-ext-page .content-cont .address-text {
+  float: left;
+  color: #333 !important;
+  font: normal 17px Arial;
+  margin-left: 20px;
+}
+
+.contacts-ext-page .content-cont .address-text .tels {
+  margin: 20px 0 !important;
+}
+
+.contacts-ext-page .content-cont .address-text a:link, .contacts-ext-page .content-cont .address-text a:visited {
+  color: #333;
+  font: normal 16px Arial;
+  text-decoration: none;
+}
+
+.contacts-ext-page .content-cont .address-text a:hover, .contacts-ext-page .content-cont .address-text a:active {
+  text-decoration: underline;
+}
+
+.contacts-ext-page h2 {
+  margin: 10px 0 20px;
+  color: #002e3d;
+  font: bold 14px Arial;
+}
+
+.contacts-ext-page table.formt td.labeltd {
+  width: 150px;
+}
+
+.contacts-ext-page table.formt td.inputstd input#fio,
+.contacts-ext-page table.formt td.inputstd input#email,
+.contacts-ext-page table.formt td.inputstd input#tel {
+  width: 250px;
+}
+
+.contacts-ext-page table.formt textarea {
+  width: 655px;
+}
+
+/* /контакты */
 /* награды внизу страницы */
 .awards-down {
   margin-top: 20px;
@@ -486,12 +554,14 @@ body {
 }
 
 /* формы */
-.cabinet-content-cont table.formt {
+.cabinet-content-cont table.formt,
+.contacts-ext-page table.formt {
   width: 100%;
   color: #136986;
 }
 
-.cabinet-content-cont table.formt td.labeltd {
+.cabinet-content-cont table.formt td.labeltd,
+.contacts-ext-page table.formt td.labeltd {
   text-align: right;
   color: #136986;
   font: normal 14px Arial;
@@ -502,18 +572,21 @@ body {
   padding-top: 15px;
 }
 
-.cabinet-content-cont table.formt td.textareatd {
+.cabinet-content-cont table.formt td.textareatd,
+.contacts-ext-page table.formt td.textareatd {
   padding-top: 15px;
   color: #136986;
   font: normal 14px Arial;
 }
 
-.cabinet-content-cont table.formt td.submittd {
+.cabinet-content-cont table.formt td.submittd,
+.contacts-ext-page table.formt td.submittd {
   padding: 30px 0 20px;
   text-align: center;
 }
 
-.cabinet-content-cont table.formt input {
+.cabinet-content-cont table.formt input,
+.contacts-ext-page table.formt input {
   border: solid 2px #b6d4de;
   margin-left: 5px;
 }
@@ -523,12 +596,14 @@ body {
   top: 3px;
 }
 
-.cabinet-content-cont table.formt textarea {
+.cabinet-content-cont table.formt textarea,
+.contacts-ext-page table.formt textarea {
   border: solid 2px #b6d4de;
   resize: none;
 }
 
-.cabinet-content-cont table.formt a.submit:link, .cabinet-content-cont table.formt a.submit:visited {
+.cabinet-content-cont table.formt a.submit:link, .cabinet-content-cont table.formt a.submit:visited,
+.contacts-ext-page table.formt a.submit:link, .contacts-ext-page table.formt a.submit:visited {
   padding: 8px 15px;
   color: #fff;
   font: normal 18px Arial;
@@ -547,7 +622,8 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#9aba39', endColorstr = '#b2d350', GradientType = 0); /* IE6-9 */
 }
 
-.cabinet-content-cont table.formt a.submit:hover, .cabinet-content-cont table.formt a.submit:active {
+.cabinet-content-cont table.formt a.submit:hover, .cabinet-content-cont table.formt a.submit:active,
+.contacts-ext-page table.formt a.submit:hover, .contacts-ext-page table.formt a.submit:active {
   background: #b3d54b; /* Old browsers */
 }
 

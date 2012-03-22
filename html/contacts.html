@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="description" content=""/>
+  <meta name="keywords" content=""/>
+  <title>Print / Контакты</title>
+  <link href="css/reset.css" rel="stylesheet" type="text/css"/>
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="js/js.js"></script>
+</head>
+<body>
+<!-- шапка -->
+<div class="header">
+  <div class="container">
+    <table class="headert">
+      <tr>
+        <td class="logotd">
+          <a href="/"><img src="img/logo.png" width="153" height="32" alt=""/></a>
+        </td>
+        <td class="menutd">
+          <ul class="header-menu clearfix">
+            <li class="item1 active"><a href="#">Офсетная печать</a></li>
+            <li class="item2"><a href="#">Флексопечать</a></li>
+            <li class="item3"><a href="#">Контакты</a></li>
+          </ul>
+        </td>
+        <td class="addresstd">
+          <strong>Минск, ул. Первая, 21-305</strong><br/>
+          <a href="#">ofset@mail.ru</a>
+          <ul class="tels">
+            <li><img src="img/tels-mts.png" width="16" height="16" alt="МТС">&nbsp;033 200-00-00</li>
+            <li><img src="img/tels-velcom.png" width="16" height="16" alt="Velcom">&nbsp;044 200-00-00</li>
+            <li><img src="img/tels-gorod.png" width="16" height="16" alt="городоской">&nbsp;017 200-00-00</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!-- /шапка -->
+<div class="main-cont external-cont contacts-ext-page">
+  <!-- левая часть -->
+  <div class="sidebar sidebar1">
+    <div class="content-cont">
+      <div class="content-text">
+        <div class="title">
+          Контакты
+        </div>
+        <div class="clearfix">
+          <div class="address-map">
+            <img src="img/contacts-map.jpg" width="214" height="214" alt=""/><br/>
+            <a href="#">Расположение на карте</a>
+          </div>
+          <div class="address-text">
+            <span class="bold">Минск, ул. Первая, 21-305</span><br/>
+            <ul class="tels">
+              <li><img src="img/tels-mts.png" width="16" height="16" alt="МТС">&nbsp;033 <span
+                      class="bold">200-00-00</span></li>
+              <li><img src="img/tels-velcom.png" width="16" height="16" alt="Velcom">&nbsp;044 <span class="bold">200-00-00</span>
+              </li>
+              <li><img src="img/tels-gorod-black.png" width="16" height="16" alt="городоской">&nbsp;017 <span
+                      class="bold">200-00-00</span></li>
+            </ul>
+            <a href="#">ofset@mail.ru</a>
+          </div>
+        </div>
+        <hr/>
+        <h2>Вы можете отправить нам сообщение и наш менеджер свяжется с вами:</h2>
+        <table class="formt">
+          <tr>
+            <td class="labeltd">
+              <label for="fio">Ваше имя и фамилия:</label>
+            </td>
+            <td class="inputstd">
+              <input id="fio" type="text"/>
+            </td>
+          </tr>
+          <tr>
+            <td class="labeltd">
+              <label for="tel">Контактный телефон:</label>
+            </td>
+            <td class="inputstd">
+              <input id="tel" type="text"/>
+            </td>
+          </tr>
+          <tr>
+            <td class="labeltd">
+              <label for="email">E-mail:</label>
+            </td>
+            <td class="inputstd">
+              <input id="email" type="text"/>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="textareatd">
+              <label for="message-text">Ваше сообщение:</label><br/>
+              <textarea id="message-text" rows="7" placeholder="Введите ваше сообщение"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="submittd">
+              <a class="submit" href="#">Отправить сообщение</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!-- /левая часть -->
+  <!-- правая часть -->
+  <div class="sidebar sidebar2">
+    <!-- залогинен -->
+    <div class="loggedin-cont clearfix">
+      <div class="hello">Здравствуйте, <span class="bold">Николай</span>.</div>
+      <div class="logout"><a href="#">Выйти</a></div>
+    </div>
+    <!-- залогинен -->
+    <!-- не залогинен -->
+    <div class="loggedout-cont clearfix">
+      <div class="title">Вход в личный кабинет</div>
+      <div class="data clearfix">
+        <table>
+          <tr>
+            <td class="label">
+              <label for="email">E-mail</label>
+            </td>
+            <td class="input">
+              <input type="text" id="email"/>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              <label for="pass">Пароль</label>
+            </td>
+            <td class="input">
+              <input type="text" id="pass"/>
+            </td>
+          </tr>
+        </table>
+        <a class="forgot-pass" href="#">Забыли пароль?</a>
+
+        <div class="enter">
+          <a class="enter" href="#">Войти</a>
+        </div>
+      </div>
+      <div class="descr clearfix">
+        <p>Зарегистрировавшись, вы сможете просто и быстро размещать заказы самостоятельно, с помощью личного
+          кабинета.</p>
+
+        <div class="register"><a class="register" href="#">Регистрация</a></div>
+      </div>
+    </div>
+    <!-- не залогинен -->
+    <div class="ofirme-cont">
+      <div class="ofirme">
+        Несколько слов о фирме, например о том, что компания работает на основе технологических инноваций компании <span
+              class="bold">Kodak</span>.
+      </div>
+    </div>
+  </div>
+  <!-- /правая часть -->
+  <!-- награды внизу -->
+  <div class="awards-down">
+    <table>
+      <tr>
+        <td>
+          <img src="img/award1.jpg" width="201" height="108" alt=""/>
+        </td>
+        <td>
+          <img src="img/award2.jpg" width="191" height="79" alt=""/>
+        </td>
+        <td>
+          <img src="img/award3.jpg" width="167" height="110" alt=""/>
+        </td>
+        <td class="award4">
+          <img src="img/award4.jpg" width="219" height="59" alt=""/>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- /награды внизу -->
+</div>
+<div class="awards-down-cont-bg"></div>
+<!-- копирайт -->
+<div class="copy container">
+  &copy; 2012 <a href="#">Print</a>. All rights reserved.
+</div>
+<!-- /копирайт -->
+</body>
+</html>
