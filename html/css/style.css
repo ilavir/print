@@ -150,7 +150,7 @@ body {
 }
 
 .sidebar2 .ofirme {
-  padding: 50px 40px 30px;
+  padding: 30px 40px 30px;
   color: #002e3d;
   font: normal 15px Arial;
 }
@@ -238,9 +238,75 @@ body {
   background: url('../img/main-banner-down-cont-bg.png') no-repeat center top;
 }
 
+/* /главная страница */
+/* офсетная печать */
+.ofset-ext-page .content-cont {
+  height: 100%;
+  border: solid 2px #b6d4de;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.ofset-ext-page .content-cont .content-text {
+  margin: 20px 30px;
+}
+
+.ofset-ext-page .content-cont .title {
+  padding-bottom: 15px;
+  color: #3c5962;
+  font: normal 38px Arial;
+  border-bottom: solid 2px #c3d6dc;
+}
+
+.ofset-ext-page .content-cont p {
+  margin-top: 10px;
+  color: #333;
+  font: normal 14px Arial;
+}
+
+.ofset-ext-page .content-cont hr {
+  height: 2px;
+  background: #c3d6dc;
+  border: none;
+}
+
+.ofset-ext-page .content-cont table.internal-img {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.ofset-ext-page .content-cont table.internal-img td {
+  width: 50%;
+  vertical-align: middle;
+}
+
+.ofset-ext-page .content-cont table.internal-img td.text {
+  padding: 0 30px;
+}
+
+.ofset-ext-page .ofirme-cont {
+  min-height: 340px;
+  margin-top: 20px;
+  background: url('../img/right-banner1.jpg') no-repeat;
+  border: solid 2px #b6d4de;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.ofset-ext-page .ofirme-cont .ofirme {
+  background: url('../img/ofirme-bg.png');
+  -webkit-border-radius: 18px 18px 0 0;
+  -moz-border-radius: 18px 18px 0 0;
+  border-radius: 18px 18px 0 0;
+}
+
+/* /офсетная печать */
 /* награды внизу страницы */
 .awards-down {
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 0 20px;
   background: #fff;
   -webkit-border-radius: 0 0 20px 20px;
@@ -271,7 +337,7 @@ body {
 }
 
 /* /награды внизу страницы */
-/* /главная страница */
+
 /* личный кабинет */
 .cabinet-cont {
   background: #dbe6ea; /* Old browsers */
