@@ -133,6 +133,145 @@ body {
   box-shadow: 0 1px 2px #c2d8df;
 }
 
+/* главная страница */
+.external-cont {
+  background: #e6eef1;
+}
+
+.external-cont .sidebar1 {
+  margin-right: 352px;
+}
+
+.external-cont .sidebar2 {
+  position: absolute;
+  width: 350px;
+  top: 0;
+  right: 0;
+}
+
+.sidebar2 .ofirme {
+  padding: 50px 40px 30px;
+  color: #002e3d;
+  font: normal 15px Arial;
+}
+
+.main-page .content-cont {
+  -webkit-border-radius: 20px 20px 20px 0;
+  -moz-border-radius: 20px 20px 20px 0;
+  border-radius: 20px 20px 20px 0;
+  background: #fff;
+}
+
+.main-page .main-banner1 {
+  position: relative;
+  height: 500px;
+  -webkit-border-radius: 20px 20px 20px 0;
+  -moz-border-radius: 20px 20px 20px 0;
+  border-radius: 20px 20px 20px 0;
+  background: url('../img/main-banner1-bg.jpg') no-repeat;
+}
+
+.main-page .link-cont {
+  width: 100%;
+  -webkit-border-radius: 0 0 20px 0;
+  -moz-border-radius: 0 0 20px 0;
+  border-radius: 0 0 20px 0;
+  background: url('../img/main-banner-link-bg.png') repeat-x top;
+}
+
+.main-page .main-banner1 .link-cont {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.main-page .link-cont a:link, .main-page .link-cont a:visited {
+  display: inline-block;
+  min-width: 280px;
+  margin: 2px;
+  padding: 10px 40px 10px 40px;
+  color: #fff;
+  font: normal 24px Arial;
+  text-decoration: none;
+  -webkit-border-radius: 20px 20px 20px 0;
+  -moz-border-radius: 20px 20px 20px 0;
+  border-radius: 20px 20px 20px 0;
+  background: #00779d; /* Old browsers */
+  background: -moz-linear-gradient(top, #00779d 0%, #55b4d2 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00779d), color-stop(100%, #55b4d2)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #00779d 0%, #55b4d2 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #00779d 0%, #55b4d2 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #00779d 0%, #55b4d2 100%); /* IE10+ */
+  background: linear-gradient(top, #00779d 0%, #55b4d2 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#00779d', endColorstr = '#55b4d2', GradientType = 0); /* IE6-9 */
+}
+
+.main-page .link-cont a:hover, .main-page .link-cont a:active {
+  background: #23a0c8;
+}
+
+.main-page .banner-text {
+  width: 280px;
+  height: 446px;
+  margin: 0 0 2px 2px;
+  padding: 0 40px;
+  -webkit-border-radius: 20px 20px 20px 0;
+  -moz-border-radius: 20px 20px 20px 0;
+  border-radius: 20px 20px 20px 0;
+  background: url('../img/banner-text-bg.png');
+}
+
+.main-page .banner-text .title {
+  padding-top: 140px;
+  color: #002e3d;
+  font: normal 24px Arial;
+}
+
+.main-page .banner-text .text {
+  margin-top: 30px;
+  color: #3b5b65;
+  font: normal 18px Arial;
+}
+
+.main-page .main-banner-down-cont-bg {
+  height: 20px;
+  background: url('../img/main-banner-down-cont-bg.png') no-repeat center top;
+}
+
+/* награды внизу страницы */
+.awards-down {
+  margin-top: 10px;
+  padding: 0 20px;
+  background: #fff;
+  -webkit-border-radius: 0 0 20px 20px;
+  -moz-border-radius: 0 0 20px 20px;
+  border-radius: 0 0 20px 20px;
+}
+
+.awards-down table {
+  width: 100%;
+  height: 140px;
+}
+
+.awards-down table td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.awards-down table td.award4 {
+  padding-right: 150px;
+  background: url('../img/award4-bg.png') no-repeat right top;
+}
+
+.awards-down-cont-bg {
+  position: relative;
+  top: -20px;
+  height: 20px;
+  background: url('../img/awards-down-cont-bg.png') no-repeat center top;
+}
+
+/* /награды внизу страницы */
+/* /главная страница */
 /* личный кабинет */
 .cabinet-cont {
   background: #dbe6ea; /* Old browsers */
@@ -283,6 +422,7 @@ body {
 /* формы */
 .cabinet-content-cont table.formt {
   width: 100%;
+  color: #136986;
 }
 
 .cabinet-content-cont table.formt td.labeltd {
@@ -310,6 +450,11 @@ body {
 .cabinet-content-cont table.formt input {
   border: solid 2px #b6d4de;
   margin-left: 5px;
+}
+
+.cabinet-content-cont table.formt input[type='checkbox'] {
+  position: relative;
+  top: 3px;
 }
 
 .cabinet-content-cont table.formt textarea {
@@ -560,6 +705,19 @@ body {
 
 /* /листалка */
 /* /мои заказы */
+/* заказ офсетной печати */
+.ofset-page table.formt input#project {
+  width: 300px;
+}
+
+.ofset-page table.formt input#quant,
+.ofset-page table.formt input#format1,
+.ofset-page table.formt input#format2,
+.ofset-page table.formt input#linear {
+  width: 50px;
+}
+
+/* /заказ офсетной печати */
 /* /личный кабинет */
 /* залогиненая форма */
 .loggedin-cont {
@@ -621,6 +779,146 @@ body {
 }
 
 /* /залогиненая форма */
+/* не залогиненая форма */
+.loggedout-cont {
+  width: 350px;
+  background: #769c07;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.loggedout-cont .title {
+  padding: 15px 0;
+  color: #fff;
+  font: normal 18px Arial;
+  text-align: center;
+  -webkit-border-radius: 20px 20px 20px 0;
+  -moz-border-radius: 20px 20px 20px 0;
+  border-radius: 20px 20px 20px 0;
+  background: #9bba3a; /* Old browsers */
+  background: -moz-linear-gradient(top, #9bba3a 0%, #85ab22 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9bba3a), color-stop(100%, #85ab22)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #9bba3a 0%, #85ab22 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #9bba3a 0%, #85ab22 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #9bba3a 0%, #85ab22 100%); /* IE10+ */
+  background: linear-gradient(top, #9bba3a 0%, #85ab22 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#9bba3a', endColorstr = '#85ab22', GradientType = 0); /* IE6-9 */
+}
+
+.loggedout-cont .data {
+  margin: 5px 42px 10px;
+}
+
+.loggedout-cont table {
+  width: 100%;
+}
+
+.loggedout-cont table td.label {
+  color: #fff;
+  font: bold 15px Arial;
+  vertical-align: middle;
+}
+
+.loggedout-cont table td.input {
+  padding: 3px 0;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.loggedout-cont table td.input input {
+  width: 180px;
+  height: 20px;
+  line-height: 20px;
+  border: none;
+}
+
+.loggedout-cont a.forgot-pass:link, .loggedout-cont a.forgot-pass:visited {
+  float: left;
+  margin-top: 20px;
+  color: #002e3d;
+  font: normal 15px Arial;
+  text-decoration: underline;
+}
+
+.loggedout-cont div.enter {
+  float: right;
+  margin-top: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #94b532; /* Old browsers */
+  background: -moz-linear-gradient(top, #94b532 0%, #b3d451 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #94b532), color-stop(100%, #b3d451)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #94b532 0%, #b3d451 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #94b532 0%, #b3d451 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #94b532 0%, #b3d451 100%); /* IE10+ */
+  background: linear-gradient(top, #94b532 0%, #b3d451 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#94b532', endColorstr = '#b3d451', GradientType = 0); /* IE6-9 */
+}
+
+.loggedout-cont a.enter:link, .loggedout-cont a.enter:visited {
+  display: block;
+  padding: 10px 40px 10px 15px;
+  color: #333;
+  font: bold 15px Arial;
+  text-decoration: none;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: url('../img/button-enter-icon.png') no-repeat;
+  background-position: 90% 7px;
+}
+
+.loggedout-cont a.enter:hover, .loggedout-cont a.enter:active {
+  background-color: #b3d451;
+}
+
+.loggedout-cont .descr {
+  margin: 2px;
+  padding: 10px 40px;
+  background: #99b937;
+  -webkit-border-radius: 0 0 20px 20px;
+  -moz-border-radius: 0 0 20px 20px;
+  border-radius: 0 0 20px 20px;
+  color: #002e3d;
+  font: normal 15px Arial;
+}
+
+.loggedout-cont div.register {
+  float: right;
+  margin-top: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #008ebb; /* Old browsers */
+  background: -moz-linear-gradient(top, #008ebb 0%, #149dc9 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #008ebb), color-stop(100%, #149dc9)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #008ebb 0%, #149dc9 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #008ebb 0%, #149dc9 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #008ebb 0%, #149dc9 100%); /* IE10+ */
+  background: linear-gradient(top, #008ebb 0%, #149dc9 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#008ebb', endColorstr = '#149dc9', GradientType = 0); /* IE6-9 */
+}
+
+.loggedout-cont a.register:link, .loggedout-cont a.register:visited {
+  display: block;
+  padding: 10px 40px 10px 15px;
+  color: #fff;
+  font: bold 15px Arial;
+  text-decoration: none;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: url('../img/button-register-icon.png') no-repeat;
+  background-position: 90% 7px;
+}
+
+.loggedout-cont a.register:hover, .loggedout-cont a.register:active {
+  background-color: #03a6da;
+}
+
+/* /не залогиненая форма */
 .bold {
   font-weight: bold;
 }
