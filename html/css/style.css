@@ -405,6 +405,75 @@ body {
 }
 
 /* /награды внизу страницы */
+/* регистрация */
+.registration-ext-page .content-cont {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.registration-ext-page .content-cont .title {
+  padding: 20px 30px;
+  border-bottom: solid 2px #c3d6dc;
+  color: #3c5962;
+  font: normal 38px Arial;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+  background: #e1ebee; /* Old browsers */
+  background: -moz-linear-gradient(top, #e1ebee 0%, #ffffff 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e1ebee), color-stop(100%, #ffffff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #e1ebee 0%, #ffffff 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #e1ebee 0%, #ffffff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #e1ebee 0%, #ffffff 100%); /* IE10+ */
+  background: linear-gradient(top, #e1ebee 0%, #ffffff 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#e1ebee', endColorstr = '#ffffff', GradientType = 0); /* IE6-9 */
+}
+
+.registration-ext-page .content-cont .content-text {
+  padding: 20px 30px;
+}
+
+.registration-ext-page .content-cont .green-hint {
+  width: 300px !important;
+}
+
+.registration-ext-page .content-cont table.formt {
+
+}
+
+.registration-ext-page .content-cont div.submit {
+  display: inline-block;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #008ebb; /* Old browsers */
+  background: -moz-linear-gradient(top, #008ebb 0%, #149dc9 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #008ebb), color-stop(100%, #149dc9)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #008ebb 0%, #149dc9 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #008ebb 0%, #149dc9 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #008ebb 0%, #149dc9 100%); /* IE10+ */
+  background: linear-gradient(top, #008ebb 0%, #149dc9 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#008ebb', endColorstr = '#149dc9', GradientType = 0); /* IE6-9 */
+}
+
+.registration-ext-page .content-cont a.submit:link, .registration-ext-page .content-cont a.submit:visited {
+  display: block;
+  padding: 10px 40px 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  font: normal 18px Arial;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: url('../img/button-register2-icon.png') no-repeat;
+  background-position: 95% 9px;
+}
+
+.registration-ext-page .content-cont a.submit:hover, .registration-ext-page .content-cont a.submit:active {
+  background-color: #03a6da;
+}
 
 /* личный кабинет */
 .cabinet-cont {
@@ -561,32 +630,37 @@ body {
 }
 
 .cabinet-content-cont table.formt td.labeltd,
-.contacts-ext-page table.formt td.labeltd {
+.contacts-ext-page table.formt td.labeltd,
+.registration-ext-page table.formt td.labeltd {
   text-align: right;
   color: #136986;
   font: normal 14px Arial;
   padding-bottom: 8px;
 }
 
-.cabinet-content-cont table.formt td.newinputtd {
+.cabinet-content-cont table.formt td.newinputtd,
+.registration-ext-page table.formt td.newinputtd {
   padding-top: 15px;
 }
 
 .cabinet-content-cont table.formt td.textareatd,
-.contacts-ext-page table.formt td.textareatd {
+.contacts-ext-page table.formt td.textareatd,
+.registration-ext-page table.formt td.textareatd {
   padding-top: 15px;
   color: #136986;
   font: normal 14px Arial;
 }
 
 .cabinet-content-cont table.formt td.submittd,
-.contacts-ext-page table.formt td.submittd {
+.contacts-ext-page table.formt td.submittd,
+.registration-ext-page table.formt td.submittd {
   padding: 30px 0 20px;
   text-align: center;
 }
 
 .cabinet-content-cont table.formt input,
-.contacts-ext-page table.formt input {
+.contacts-ext-page table.formt input,
+.registration-ext-page table.formt input {
   border: solid 2px #b6d4de;
   margin-left: 5px;
 }
@@ -654,6 +728,22 @@ body {
 }
 
 /* /изменить профиль */
+/* регистрация */
+.registration-ext-page .content-cont table.formt input#name,
+.registration-ext-page .content-cont table.formt input#fam,
+.registration-ext-page .content-cont table.formt input#tel,
+.registration-ext-page .content-cont table.formt input#org,
+.registration-ext-page .content-cont table.formt input#email,
+.registration-ext-page .content-cont table.formt input#dopemail {
+  width: 300px;
+}
+
+.registration-ext-page .content-cont table.formt input#newpass,
+.registration-ext-page .content-cont table.formt input#reppass {
+  width: 200px;
+}
+
+/* /регистрация */
 /* /формы */
 /* мои заказы */
 .cabinet-content-cont .zakazy-page {
