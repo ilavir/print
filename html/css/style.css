@@ -668,6 +668,7 @@ body {
 .cabinet-content-cont table.formt input[type='checkbox'] {
   position: relative;
   top: 3px;
+  border: none;
 }
 
 .cabinet-content-cont table.formt textarea,
@@ -744,6 +745,39 @@ body {
 }
 
 /* /регистрация */
+/* заказ офсетной печати */
+.ofset-page table.formt input#project {
+  width: 300px;
+}
+
+.ofset-page table.formt input#quant,
+.ofset-page table.formt input#format1,
+.ofset-page table.formt input#format2,
+.ofset-page table.formt input#linear {
+  width: 50px;
+}
+
+.ofset-page table.formt input#cmyk1,
+.ofset-page table.formt input#cmyk2,
+.ofset-page table.formt input#cmyk3,
+.ofset-page table.formt input#cmyk4,
+.ofset-page table.formt input#corners1-1,
+.ofset-page table.formt input#corners2-1,
+.ofset-page table.formt input#corners3-1 {
+  width: 30px;
+}
+
+.ofset-page table.formt input#corners1-2,
+.ofset-page table.formt input#corners2-2,
+.ofset-page table.formt input#corners3-2 {
+  width: 50px;
+}
+
+.ofset-page table.formt textarea {
+  width: 486px;
+}
+
+/* /заказ офсетной печати */
 /* /формы */
 /* мои заказы */
 .cabinet-content-cont .zakazy-page {
@@ -937,19 +971,6 @@ body {
 
 /* /листалка */
 /* /мои заказы */
-/* заказ офсетной печати */
-.ofset-page table.formt input#project {
-  width: 300px;
-}
-
-.ofset-page table.formt input#quant,
-.ofset-page table.formt input#format1,
-.ofset-page table.formt input#format2,
-.ofset-page table.formt input#linear {
-  width: 50px;
-}
-
-/* /заказ офсетной печати */
 /* /личный кабинет */
 /* залогиненая форма */
 .loggedin-cont {
