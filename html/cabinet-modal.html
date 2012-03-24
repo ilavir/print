@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="description" content=""/>
+  <meta name="keywords" content=""/>
+  <title>Print / Мой профиль / Мои заказы</title>
+  <link href="css/reset.css" rel="stylesheet" type="text/css"/>
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="js/js.js"></script>
+</head>
+<body>
+<div class="modal">
+  <div class="modal-cont">
+    <div class="title">
+      <a class="close" href="#">Закрыть</a>
+      <a class="order" href="#">Заказать повторно</a>
+
+      <p>Вы можете заказать форму с теми<br/> же параметрами повторно:</p>
+    </div>
+    <div class="content">
+      <div class="zakaz">Заказ № <span>125634</span></div>
+      <div class="date">12.02.2012</div>
+      <div class="name">Название работы, в несколько строк, длинное или короткое, абсолютно неважно. Все-таки в
+        несколько строк.
+      </div>
+      <table class="statust">
+        <tr>
+          <td class="label">
+            Статус:
+          </td>
+          <td class="status">
+            <span class="processed">В работе</span>
+          </td>
+          <td class="label">
+            Оплата:
+          </td>
+          <td class="pay">
+            <span class="pay-no">Оплачено</span>
+          </td>
+        </tr>
+      </table>
+      <div class="infot-cont">
+        <table class="infot">
+          <tr>
+            <td class="label">
+              Количество форм
+            </td>
+            <td class="data">
+              3
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Формат, мм
+            </td>
+            <td class="data">
+              220x300
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Линеатура, lpi
+            </td>
+            <td class="data">
+              150
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="desc">
+              <span>Описание:</span>
+
+              <p>Дополнительное описание, например инструкции, в несколько строк.</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<!-- шапка -->
+<div class="header">
+  <div class="container">
+    <table class="headert">
+      <tr>
+        <td class="logotd">
+          <a href="/"><img src="img/logo.png" width="153" height="32" alt=""/></a>
+        </td>
+        <td class="menutd">
+          <ul class="header-menu clearfix">
+            <li class="item1 active"><a href="#">Офсетная печать</a></li>
+            <li class="item2"><a href="#">Флексопечать</a></li>
+            <li class="item3"><a href="#">Контакты</a></li>
+          </ul>
+        </td>
+        <td class="addresstd">
+          <strong>Минск, ул. Первая, 21-305</strong><br/>
+          <a href="#">ofset@mail.ru</a>
+          <ul class="tels">
+            <li><img src="img/tels-mts.png" width="16" height="16" alt="МТС">&nbsp;033 200-00-00</li>
+            <li><img src="img/tels-velcom.png" width="16" height="16" alt="Velcom">&nbsp;044 200-00-00</li>
+            <li><img src="img/tels-gorod.png" width="16" height="16" alt="городоской">&nbsp;017 200-00-00</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!-- /шапка -->
+<div class="main-cont cabinet-cont">
+  <div class="cabinet-header">
+    <div class="loggedin-cont clearfix">
+      <div class="hello">Здравствуйте, <span class="bold">Николай</span>.</div>
+      <div class="logout"><a href="#">Выйти</a></div>
+    </div>
+  </div>
+  <!-- левое меню -->
+  <div class="cabinet-menu-cont">
+    <ul class="cabinet-menu">
+      <li class="active"><a href="#">Мои заказы</a></li>
+    </ul>
+    <div class="cabinet-menu-order-cont">
+      <div class="title">Заказать</div>
+      <ul class="cabinet-menu cabinet-menu-order">
+        <li><a href="#">Формы офсетной печати</a></li>
+        <li><a href="#">Формы флексопечати</a></li>
+      </ul>
+    </div>
+    <ul class="cabinet-menu">
+      <li><a href="#">Мой профиль</a></li>
+      <li><a href="#">Сообщения</a></li>
+      <li><a href="#">Справка</a></li>
+    </ul>
+  </div>
+  <!-- /левое меню -->
+  <div class="cabinet-content-cont">
+    <h1 class="cabinet-title">Мои заказы</h1>
+
+    <div class="cabinet-content clearfix">
+      <div class="zakazy-page">
+        <table class="zakazyt">
+          <thead>
+          <tr>
+            <th>
+              <a href="#">Номер</a>
+            </th>
+            <th>
+              <a href="#">Название</a>
+            </th>
+            <th>
+              <a href="#">Дата</a>
+            </th>
+            <th class="active">
+              <a href="#">Статус</a>
+            </th>
+            <th>
+              Оплата
+            </th>
+            <th>
+            </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td class="numbertd">
+              1250034
+            </td>
+            <td class="nametd">
+              <a href="#">Имиджевый буклет «Белсвисбанк»</a>
+            </td>
+            <td class="datetd">
+              09.11.2012
+            </td>
+            <td class="statustd">
+              <div class="accepted">Принят</div>
+            </td>
+            <td class="paytd">
+              <img src="img/pay-no-icon.png" width="25" height="25" alt=""/>
+            </td>
+            <td class="deletetd">
+              <a href="#">Удалить</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="numbertd">
+              1250034
+            </td>
+            <td class="nametd">
+              <a href="#">Имиджевый буклет «Белсвисбанк»</a>
+            </td>
+            <td class="datetd">
+              09.11.2012
+            </td>
+            <td class="statustd">
+              <div class="processed">В работе</div>
+            </td>
+            <td class="paytd">
+              <img src="img/pay-yes-icon.png" width="25" height="25" alt=""/>
+            </td>
+            <td class="deletetd">
+              <a href="#">Удалить</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="numbertd">
+              1250034
+            </td>
+            <td class="nametd">
+              <a href="#">Имиджевый буклет «Белсвисбанк», или что-нибудь другое, чтобы в одну строку не влазило</a>
+            </td>
+            <td class="datetd">
+              09.11.2012
+            </td>
+            <td class="statustd">
+              <div class="closed">Завершен</div>
+            </td>
+            <td class="paytd">
+              <img src="img/pay-no-icon.png" width="25" height="25" alt=""/>
+            </td>
+            <td class="deletetd">
+              <a href="#">Удалить</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="numbertd">
+              1250034
+            </td>
+            <td class="nametd">
+              <a href="#">Имиджевый буклет «Белсвисбанк»</a>
+            </td>
+            <td class="datetd">
+              09.11.2012
+            </td>
+            <td class="statustd">
+              <div class="accepted">Принят</div>
+            </td>
+            <td class="paytd">
+              <img src="img/pay-yes-icon.png" width="25" height="25" alt=""/>
+            </td>
+            <td class="deletetd">
+              <a href="#">Удалить</a>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="pager-cont">
+          <ul class="pager clearfix">
+            <li class="pager-prev"><a href="#">Назад</a></li>
+            <li class="pager-active">1</li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li>...</li>
+            <li><a href="#">23</a></li>
+            <li class="pager-next"><a href="#">Вперед</a></li>
+          </ul>
+          <div style="clear: left;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- копирайт -->
+<div class="copy container">
+  &copy; 2012 <a href="#">Print</a>. All rights reserved.
+</div>
+<!-- /копирайт -->
+</body>
+</html>

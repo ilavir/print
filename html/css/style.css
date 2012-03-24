@@ -971,6 +971,206 @@ body {
 
 /* /листалка */
 /* /мои заказы */
+/* всплывающее окно */
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.modal-cont {
+  position: relative;
+  top: 20%;
+  width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  border: solid 1px #8cb3c1;
+  border-radius: 0 20px 20px 20px;
+  -moz-border-radius: 0 20px 20px 20px;
+  -webkit-border-radius: 0 20px 20px 20px;
+  box-shadow: 0 0 10px #8cb3c1;
+  -moz-box-shadow: 0 0 10px #8cb3c1;
+  -webkit-box-shadow: 0 0 10px #8cb3c1;
+}
+
+.modal-cont .title {
+  position: relative;
+  min-height: 65px;
+  color: #136986;
+  font: bold 14px Arial;
+  border-radius: 0 20px 0 0;
+  -moz-border-radius: 0 20px 0 0;
+  -webkit-border-radius: 0 20px 0 0;
+  background: #e6eef1; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #e6eef1 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e6eef1)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffffff 0%, #e6eef1 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ffffff 0%, #e6eef1 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ffffff 0%, #e6eef1 100%); /* IE10+ */
+  background: linear-gradient(top, #ffffff 0%, #e6eef1 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#e6eef1', GradientType = 0); /* IE6-9 */
+}
+
+.modal-cont .title a.close:link, .modal-cont .title a.close:visited {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: url('../img/button-modal-close-icon.png') no-repeat right top;
+  text-indent: -9999px;
+}
+
+.modal-cont .title a.close:hover, .modal-cont .title a.close:active {
+  background-position: 0 -60px;
+}
+
+.modal-cont .title a.order:link, .modal-cont .title a.order:visited {
+  display: block;
+  float: right;
+  margin: 20px 60px 0 20px;
+  padding: 10px 15px;
+  color: #fff;
+  font: bold 15px Arial;
+  text-decoration: none;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #008ebb; /* Old browsers */
+  background: -moz-linear-gradient(top, #008ebb 0%, #149dc9 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #008ebb), color-stop(100%, #149dc9)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #008ebb 0%, #149dc9 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #008ebb 0%, #149dc9 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #008ebb 0%, #149dc9 100%); /* IE10+ */
+  background: linear-gradient(top, #008ebb 0%, #149dc9 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#008ebb', endColorstr = '#149dc9', GradientType = 0); /* IE6-9 */
+}
+
+.modal-cont .title a.order:hover, .modal-cont .title a.order:active {
+  background: #03a6da;
+}
+
+.modal-cont .title p {
+  display: block;
+  float: right;
+  margin-top: 20px;
+  text-align: right;
+}
+
+.modal-cont .content {
+  margin: 15px 45px;
+}
+
+.modal-cont .content .zakaz {
+  color: #8ebccc;
+  font: bold 16px Arial;
+}
+
+.modal-cont .content .zakaz span {
+  color: #136986;
+  font: normal 21px Arial;
+}
+
+.modal-cont .content .date {
+  margin-top: 20px;
+  color: #136986;
+  font: bold 14px Arial;
+}
+
+.modal-cont .content .name {
+  margin-top: 10px;
+  color: #333;
+  font: normal 16px Arial;
+}
+
+.modal-cont .content table.statust {
+  margin-top: 20px;
+}
+
+.modal-cont .content table.statust td {
+  padding-right: 10px;
+  color: #136986;
+  vertical-align: middle;
+}
+
+.modal-cont .content table.statust td.status span {
+  display: block;
+  color: #fff;
+  padding: 5px 8px;
+  margin-right: 10px;
+  font: bold 15px Arial;
+}
+
+.modal-cont .content table.statust td.status span.accepted {
+  background: #3ea5c7;
+}
+
+.modal-cont .content table.statust td.status span.processed {
+  background: #85a517;
+}
+
+.modal-cont .content table.statust td.status span.closed {
+  background: #f5773f;
+}
+
+.modal-cont .content table.statust td.pay span {
+  display: block;
+  padding: 5px 0 5px 30px;
+  font: bold 14px Arial;
+}
+
+.modal-cont .content table.statust td.pay span.pay-yes {
+  background: url('../img/pay-yes-icon.png') no-repeat left;
+}
+
+.modal-cont .content table.statust td.pay span.pay-no {
+  background: url('../img/pay-no-icon.png') no-repeat left;
+}
+
+.modal-cont .content .infot-cont {
+  float: left;
+  margin: 30px 0 30px;
+  border: solid 2px #b6d4de;
+  -webkit-border-radius: 0 20px 20px 0;
+  -moz-border-radius: 0 20px 20px 0;
+  border-radius: 0 20px 20px 0;
+}
+
+.modal-cont .content table.infot td {
+  padding: 8px 15px;
+  border-right: solid 1px #b6d4de;
+  border-bottom: solid 1px #b6d4de;
+}
+
+.modal-cont .content table.infot tr:last-child td {
+  border-bottom: none !important;
+}
+
+.modal-cont .content table.infot td:last-child {
+  border-right: none !important;
+}
+
+.modal-cont .content table.infot td.label {
+  color: #136986;
+}
+
+.modal-cont .content table.infot td.data {
+  min-width: 300px;
+  font-weight: bold;
+}
+
+.modal-cont .content table.infot td.desc {
+  padding-bottom: 30px;
+}
+
+.modal-cont .content table.infot td.desc span {
+  color: #136986;
+}
+
+/* /всплывающее окно */
 /* /личный кабинет */
 /* залогиненая форма */
 .loggedin-cont {
